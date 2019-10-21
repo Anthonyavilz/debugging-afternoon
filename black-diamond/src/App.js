@@ -36,9 +36,14 @@ class App extends Component {
   }
   navigate(location) {
     if (location === "cart") {
-      this.state.showCart = true;
+      this.setState({
+        showCart: true
+      }); 
+        
     } else {
-      this.state.showCart = false;
+      this.setStates({
+        showCart: false
+      });
     }
   }
   render() {
